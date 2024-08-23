@@ -1,4 +1,4 @@
-package com.example.secondcognizant;
+package com.example.secondcognizant.activities;
 
 import android.app.AlarmManager;
 import android.app.NotificationChannel;
@@ -13,16 +13,12 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.cognizantrever.IAddListener;
+import com.example.secondcognizant.R;
 import com.example.secondcognizant.databinding.ActivityAnyBinding;
 
 public class AnyActivity extends AppCompatActivity {

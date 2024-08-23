@@ -1,4 +1,4 @@
-    package com.example.secondcognizant
+    package com.example.secondcognizant.activities
 
 import android.content.BroadcastReceiver
 import android.content.Context

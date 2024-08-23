@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#af6"
-    tools:context=".AnyActivity">
+    tools:context=".activities.AnyActivity">
 
     <Button
         android:id="@+id/btnAlarm"
