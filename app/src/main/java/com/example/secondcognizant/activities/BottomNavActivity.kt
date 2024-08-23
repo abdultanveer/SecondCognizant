@@ -1,6 +1,7 @@
 package com.example.secondcognizant.activities
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -14,9 +15,11 @@ class BottomNavActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityBottomNavBinding
 
+    var TAG = BottomNavActivity::class.java.simpleName
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+Log.i(TAG,"activity oncreate")
         binding = ActivityBottomNavBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -32,5 +35,32 @@ class BottomNavActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i(TAG,"activity onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i(TAG,"activity onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i(TAG,"activity onpause")
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i(TAG,"activity onstop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i(TAG,"activity ondestroy")
+
     }
 }
